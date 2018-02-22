@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC81B206203ECCFA00F01D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B205203ECCFA00F01D4F /* AppDelegate.m */; };
+		EC81B209203ECCFA00F01D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B208203ECCFA00F01D4F /* ViewController.m */; };
+		EC81B20C203ECCFA00F01D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81B20A203ECCFA00F01D4F /* Main.storyboard */; };
+		EC81B20E203ECCFA00F01D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC81B20D203ECCFA00F01D4F /* Assets.xcassets */; };
+		EC81B211203ECCFA00F01D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC81B20F203ECCFA00F01D4F /* LaunchScreen.storyboard */; };
+		EC81B214203ECCFA00F01D4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B213203ECCFA00F01D4F /* main.m */; };
+		EC81B21E203ECCFA00F01D4F /* PDFPSReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B21D203ECCFA00F01D4F /* PDFPSReporterTests.m */; };
+		EC81B229203ECCFA00F01D4F /* PDFPSReporterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B228203ECCFA00F01D4F /* PDFPSReporterUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC81B21A203ECCFA00F01D4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC81B1F9203ECCFA00F01D4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC81B200203ECCFA00F01D4F;
+			remoteInfo = PDFPSReporter;
+		};
+		EC81B225203ECCFA00F01D4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC81B1F9203ECCFA00F01D4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC81B200203ECCFA00F01D4F;
+			remoteInfo = PDFPSReporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC81B201203ECCFA00F01D4F /* PDFPSReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFPSReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81B204203ECCFA00F01D4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC81B205203ECCFA00F01D4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC81B207203ECCFA00F01D4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC81B208203ECCFA00F01D4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC81B20B203ECCFA00F01D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC81B20D203ECCFA00F01D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC81B210203ECCFA00F01D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC81B212203ECCFA00F01D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC81B213203ECCFA00F01D4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC81B219203ECCFA00F01D4F /* PDFPSReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFPSReporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81B21D203ECCFA00F01D4F /* PDFPSReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFPSReporterTests.m; sourceTree = "<group>"; };
+		EC81B21F203ECCFA00F01D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC81B224203ECCFA00F01D4F /* PDFPSReporterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFPSReporterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC81B228203ECCFA00F01D4F /* PDFPSReporterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFPSReporterUITests.m; sourceTree = "<group>"; };
+		EC81B22A203ECCFA00F01D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC81B1FE203ECCFA00F01D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81B216203ECCFA00F01D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81B221203ECCFA00F01D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC81B1F8203ECCFA00F01D4F = {
+			isa = PBXGroup;
+			children = (
+				EC81B203203ECCFA00F01D4F /* PDFPSReporter */,
+				EC81B21C203ECCFA00F01D4F /* PDFPSReporterTests */,
+				EC81B227203ECCFA00F01D4F /* PDFPSReporterUITests */,
+				EC81B202203ECCFA00F01D4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC81B202203ECCFA00F01D4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC81B201203ECCFA00F01D4F /* PDFPSReporter.app */,
+				EC81B219203ECCFA00F01D4F /* PDFPSReporterTests.xctest */,
+				EC81B224203ECCFA00F01D4F /* PDFPSReporterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC81B203203ECCFA00F01D4F /* PDFPSReporter */ = {
+			isa = PBXGroup;
+			children = (
+				EC81B204203ECCFA00F01D4F /* AppDelegate.h */,
+				EC81B205203ECCFA00F01D4F /* AppDelegate.m */,
+				EC81B207203ECCFA00F01D4F /* ViewController.h */,
+				EC81B208203ECCFA00F01D4F /* ViewController.m */,
+				EC81B20A203ECCFA00F01D4F /* Main.storyboard */,
+				EC81B20D203ECCFA00F01D4F /* Assets.xcassets */,
+				EC81B20F203ECCFA00F01D4F /* LaunchScreen.storyboard */,
+				EC81B212203ECCFA00F01D4F /* Info.plist */,
+				EC81B213203ECCFA00F01D4F /* main.m */,
+			);
+			path = PDFPSReporter;
+			sourceTree = "<group>";
+		};
+		EC81B21C203ECCFA00F01D4F /* PDFPSReporterTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC81B21D203ECCFA00F01D4F /* PDFPSReporterTests.m */,
+				EC81B21F203ECCFA00F01D4F /* Info.plist */,
+			);
+			path = PDFPSReporterTests;
+			sourceTree = "<group>";
+		};
+		EC81B227203ECCFA00F01D4F /* PDFPSReporterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC81B228203ECCFA00F01D4F /* PDFPSReporterUITests.m */,
+				EC81B22A203ECCFA00F01D4F /* Info.plist */,
+			);
+			path = PDFPSReporterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC81B200203ECCFA00F01D4F /* PDFPSReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC81B22D203ECCFA00F01D4F /* Build configuration list for PBXNativeTarget "PDFPSReporter" */;
+			buildPhases = (
+				EC81B1FD203ECCFA00F01D4F /* Sources */,
+				EC81B1FE203ECCFA00F01D4F /* Frameworks */,
+				EC81B1FF203ECCFA00F01D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFPSReporter;
+			productName = PDFPSReporter;
+			productReference = EC81B201203ECCFA00F01D4F /* PDFPSReporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC81B218203ECCFA00F01D4F /* PDFPSReporterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC81B230203ECCFA00F01D4F /* Build configuration list for PBXNativeTarget "PDFPSReporterTests" */;
+			buildPhases = (
+				EC81B215203ECCFA00F01D4F /* Sources */,
+				EC81B216203ECCFA00F01D4F /* Frameworks */,
+				EC81B217203ECCFA00F01D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC81B21B203ECCFA00F01D4F /* PBXTargetDependency */,
+			);
+			name = PDFPSReporterTests;
+			productName = PDFPSReporterTests;
+			productReference = EC81B219203ECCFA00F01D4F /* PDFPSReporterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC81B223203ECCFA00F01D4F /* PDFPSReporterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC81B233203ECCFA00F01D4F /* Build configuration list for PBXNativeTarget "PDFPSReporterUITests" */;
+			buildPhases = (
+				EC81B220203ECCFA00F01D4F /* Sources */,
+				EC81B221203ECCFA00F01D4F /* Frameworks */,
+				EC81B222203ECCFA00F01D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC81B226203ECCFA00F01D4F /* PBXTargetDependency */,
+			);
+			name = PDFPSReporterUITests;
+			productName = PDFPSReporterUITests;
+			productReference = EC81B224203ECCFA00F01D4F /* PDFPSReporterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC81B1F9203ECCFA00F01D4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = PipeDog;
+				TargetAttributes = {
+					EC81B200203ECCFA00F01D4F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EC81B218203ECCFA00F01D4F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC81B200203ECCFA00F01D4F;
+					};
+					EC81B223203ECCFA00F01D4F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC81B200203ECCFA00F01D4F;
+					};
+				};
+			};
+			buildConfigurationList = EC81B1FC203ECCFA00F01D4F /* Build configuration list for PBXProject "PDFPSReporter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC81B1F8203ECCFA00F01D4F;
+			productRefGroup = EC81B202203ECCFA00F01D4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC81B200203ECCFA00F01D4F /* PDFPSReporter */,
+				EC81B218203ECCFA00F01D4F /* PDFPSReporterTests */,
+				EC81B223203ECCFA00F01D4F /* PDFPSReporterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC81B1FF203ECCFA00F01D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81B211203ECCFA00F01D4F /* LaunchScreen.storyboard in Resources */,
+				EC81B20E203ECCFA00F01D4F /* Assets.xcassets in Resources */,
+				EC81B20C203ECCFA00F01D4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81B217203ECCFA00F01D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81B222203ECCFA00F01D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC81B1FD203ECCFA00F01D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81B209203ECCFA00F01D4F /* ViewController.m in Sources */,
+				EC81B214203ECCFA00F01D4F /* main.m in Sources */,
+				EC81B206203ECCFA00F01D4F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81B215203ECCFA00F01D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81B21E203ECCFA00F01D4F /* PDFPSReporterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC81B220203ECCFA00F01D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC81B229203ECCFA00F01D4F /* PDFPSReporterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC81B21B203ECCFA00F01D4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC81B200203ECCFA00F01D4F /* PDFPSReporter */;
+			targetProxy = EC81B21A203ECCFA00F01D4F /* PBXContainerItemProxy */;
+		};
+		EC81B226203ECCFA00F01D4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC81B200203ECCFA00F01D4F /* PDFPSReporter */;
+			targetProxy = EC81B225203ECCFA00F01D4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC81B20A203ECCFA00F01D4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC81B20B203ECCFA00F01D4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC81B20F203ECCFA00F01D4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC81B210203ECCFA00F01D4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC81B22B203ECCFA00F01D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC81B22C203ECCFA00F01D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC81B22E203ECCFA00F01D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PDFPSReporter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDFPSReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC81B22F203ECCFA00F01D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PDFPSReporter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDFPSReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC81B231203ECCFA00F01D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PDFPSReporterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDFPSReporterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFPSReporter.app/PDFPSReporter";
+			};
+			name = Debug;
+		};
+		EC81B232203ECCFA00F01D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PDFPSReporterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDFPSReporterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFPSReporter.app/PDFPSReporter";
+			};
+			name = Release;
+		};
+		EC81B234203ECCFA00F01D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PDFPSReporterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDFPSReporterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PDFPSReporter;
+			};
+			name = Debug;
+		};
+		EC81B235203ECCFA00F01D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PDFPSReporterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PipeDog.PDFPSReporterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PDFPSReporter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC81B1FC203ECCFA00F01D4F /* Build configuration list for PBXProject "PDFPSReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81B22B203ECCFA00F01D4F /* Debug */,
+				EC81B22C203ECCFA00F01D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC81B22D203ECCFA00F01D4F /* Build configuration list for PBXNativeTarget "PDFPSReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81B22E203ECCFA00F01D4F /* Debug */,
+				EC81B22F203ECCFA00F01D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC81B230203ECCFA00F01D4F /* Build configuration list for PBXNativeTarget "PDFPSReporterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81B231203ECCFA00F01D4F /* Debug */,
+				EC81B232203ECCFA00F01D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC81B233203ECCFA00F01D4F /* Build configuration list for PBXNativeTarget "PDFPSReporterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC81B234203ECCFA00F01D4F /* Debug */,
+				EC81B235203ECCFA00F01D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC81B1F9203ECCFA00F01D4F /* Project object */;
+}
