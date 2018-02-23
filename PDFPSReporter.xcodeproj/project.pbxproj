@@ -15,6 +15,8 @@
 		EC81B214203ECCFA00F01D4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B213203ECCFA00F01D4F /* main.m */; };
 		EC81B21E203ECCFA00F01D4F /* PDFPSReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B21D203ECCFA00F01D4F /* PDFPSReporterTests.m */; };
 		EC81B229203ECCFA00F01D4F /* PDFPSReporterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B228203ECCFA00F01D4F /* PDFPSReporterUITests.m */; };
+		EC81B239203ECD2F00F01D4F /* PDFPSReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B238203ECD2F00F01D4F /* PDFPSReporter.m */; };
+		EC81B23C203ECDCC00F01D4F /* UIView+PDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EC81B23B203ECDCC00F01D4F /* UIView+PDAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		EC81B224203ECCFA00F01D4F /* PDFPSReporterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFPSReporterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC81B228203ECCFA00F01D4F /* PDFPSReporterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFPSReporterUITests.m; sourceTree = "<group>"; };
 		EC81B22A203ECCFA00F01D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC81B237203ECD2F00F01D4F /* PDFPSReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFPSReporter.h; sourceTree = "<group>"; };
+		EC81B238203ECD2F00F01D4F /* PDFPSReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFPSReporter.m; sourceTree = "<group>"; };
+		EC81B23A203ECDCC00F01D4F /* UIView+PDAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PDAdd.h"; sourceTree = "<group>"; };
+		EC81B23B203ECDCC00F01D4F /* UIView+PDAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PDAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		EC81B203203ECCFA00F01D4F /* PDFPSReporter */ = {
 			isa = PBXGroup;
 			children = (
+				EC81B236203ECCFE00F01D4F /* Source */,
 				EC81B204203ECCFA00F01D4F /* AppDelegate.h */,
 				EC81B205203ECCFA00F01D4F /* AppDelegate.m */,
 				EC81B207203ECCFA00F01D4F /* ViewController.h */,
@@ -130,6 +137,17 @@
 				EC81B22A203ECCFA00F01D4F /* Info.plist */,
 			);
 			path = PDFPSReporterUITests;
+			sourceTree = "<group>";
+		};
+		EC81B236203ECCFE00F01D4F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EC81B237203ECD2F00F01D4F /* PDFPSReporter.h */,
+				EC81B238203ECD2F00F01D4F /* PDFPSReporter.m */,
+				EC81B23A203ECDCC00F01D4F /* UIView+PDAdd.h */,
+				EC81B23B203ECDCC00F01D4F /* UIView+PDAdd.m */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +285,8 @@
 			files = (
 				EC81B209203ECCFA00F01D4F /* ViewController.m in Sources */,
 				EC81B214203ECCFA00F01D4F /* main.m in Sources */,
+				EC81B239203ECD2F00F01D4F /* PDFPSReporter.m in Sources */,
+				EC81B23C203ECDCC00F01D4F /* UIView+PDAdd.m in Sources */,
 				EC81B206203ECCFA00F01D4F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
