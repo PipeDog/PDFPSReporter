@@ -10,7 +10,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "UIView+PDAdd.h"
 
-static NSInteger const kPDFPSReporterTag = 83948493;
 static NSTimeInterval const kAnimationDuration = 0.3f;
 static CGFloat const kPDFPSReporterMargin = 5.f;
 
@@ -32,7 +31,7 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         fpsReporter = [[PDFPSReporter alloc] init];
-        fpsReporter.size = CGSizeMake(55, 20);
+        fpsReporter.size = CGSizeMake(65, 20);
         fpsReporter.left = kPDFPSReporterMargin;
         fpsReporter.top = 100;
         fpsReporter.layer.cornerRadius = 5;
@@ -42,15 +41,11 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
         fpsReporter.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.700];
         fpsReporter.fpsFont = [UIFont fontWithName:@"Courier" size:14];
         fpsReporter.subFont = [UIFont fontWithName:@"Courier" size:4];
-        fpsReporter.tag = kPDFPSReporterTag;
     });
     return fpsReporter;
 }
 
 - (instancetype)init {
-#ifndef DEBUG
-    return nil;
-#else
     self = [super init];
     if (self) {
         _aSecondFpsNumber = 0;
@@ -61,16 +56,6 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
         [self addGestureRecognizer:_pan];
     }
     return self;
-#endif
-}
-
-- (void)show {
-    [self removeFromSuperview];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-        [keyWindow addSubview:self];
-    });
 }
 
 - (void)showInView:(UIView *)aView {
@@ -146,11 +131,11 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-    if (self != keyWindow) return;
-
-    UIView *fpsView = [keyWindow viewWithTag:kPDFPSReporterTag];
-    if (fpsView) [keyWindow bringSubviewToFront:fpsView];
+    
+    PDFPSReporter *fpsReporter = [PDFPSReporter defaultReporter];
+    if (fpsReporter.superview == self) {
+        [self bringSubviewToFront:[PDFPSReporter defaultReporter]];
+    }
 }
 
 @end

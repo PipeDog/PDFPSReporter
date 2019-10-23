@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [PDFPSReporter.defaultReporter show];
+    [PDFPSReporter.defaultReporter showInView:self.view];
 }
 
 

@@ -12,8 +12,6 @@
 
 @property (class, strong, readonly) PDFPSReporter *defaultReporter;
 
-- (void)show; // Show PDFPSReporter on keyWindow.
-
 - (void)showInView:(UIView *)aView;
 
 @end
