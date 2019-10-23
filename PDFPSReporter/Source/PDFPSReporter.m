@@ -50,8 +50,10 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
     if (self) {
         _aSecondFpsNumber = 0;
         _aSecondAgoTimeStamp = 0;
+        
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkReload:)];
         [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+        
         _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGestureAction:)];
         [self addGestureRecognizer:_pan];
     }
@@ -69,16 +71,14 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
         self.aSecondAgoTimeStamp = link.timestamp;
         return;
     }
+    
     self.aSecondFpsNumber += 1;
     NSTimeInterval timeStampInterval = link.timestamp - self.aSecondAgoTimeStamp;
-    if (timeStampInterval < 1) {
-        // 没到一秒的时间间隔 return
-        return;
-    }
+    if (timeStampInterval < 1) { return; }
+    
     // 每秒帧数 = 一秒内刷新帧数 / 刚刚大于一秒的时间间隔
     float fps = self.aSecondFpsNumber / timeStampInterval;
-    /* ---------------------------------------------------------- */
-    // 设置字体大小及颜色
+
     CGFloat progress = fps / 60.0;
     UIColor *color = [UIColor colorWithHue:0.27 * (progress - 0.2) saturation:1 brightness:0.9 alpha:1];
     
@@ -88,8 +88,7 @@ static CGFloat const kPDFPSReporterMargin = 5.f;
     [text addAttribute:NSFontAttributeName value:self.fpsFont range:NSMakeRange(0, text.length)];
     [text addAttribute:NSFontAttributeName value:self.subFont range:NSMakeRange(text.length - 4, 1)];
     self.attributedText = text;
-    /* ---------------------------------------------------------- */
-    // 开始下一秒的帧率计算, 数据重置
+
     self.aSecondAgoTimeStamp = link.timestamp;
     self.aSecondFpsNumber = 0;
 }
